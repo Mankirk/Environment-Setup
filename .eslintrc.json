@@ -1,10 +1,8 @@
+
+
 {
   "root": true,
-  "extends": [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings"
-  ],
+  "extends": "fortech",
   "parserOptions": {
     "ecmaVersion": 7,
     "sourceType": "module"
@@ -15,6 +13,7 @@
     "mocha": true
   },
   "rules": {
-    "no-console": 1
+    "no-console": 0,
+    "jsx-a11y/img-has-alt": 0
   }
 }

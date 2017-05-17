@@ -1,6 +1,11 @@
-import numeral from "numeral";
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Hai from "./testComponent/hello";
 
-const courseValue = numeral(1000).format("$0,0.00");
+ReactDOM.render(
+    <Hai />,
+    document.getElementById( "root" ),
+);
 
-console.log(`I would pay ${courseValue} for this awesome course!`);
+console.log( "This little puggy...inside logic" );
