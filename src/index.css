@@ -1,12 +1,49 @@
-body {
-  font-family: sans-serif;
+.slider {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top:100px;
+  width:345px;
+  border: solid green;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-h2 {
-  border: solid orange;
-  font-size: 25px;
+.viewport {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
 }
 
-table th {
-  padding: 5px;
+.track {
+  position: absolute;
+  left: 0;
+  width: 2020px;
+  height: 200px;
+  border: 1px solid blue;
+  left: -600px;
+  transition : left 0.2s;
+}
+
+.slide {
+  width: 200px;
+  height: 200px;
+  float: left;
+  background: #ccc;
+  font-size: 34px;
+  text-align: center;
+  padding: 50px 0 0 0;
+  font-family: "Arial";
+  outline: 1px solid green
+}
+
+button {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 70px;
 }
